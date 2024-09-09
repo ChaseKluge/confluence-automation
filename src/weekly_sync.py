@@ -1,10 +1,12 @@
 from atlassian import Confluence
 import get_monday
 import get_template
+from pathlib import Path
 
 def main():
-    with open('C:/Projects/confluence-automation/temp/atlassian-secret.secret', 'r') as file:
-        secret = file.read()
+    program_root = Path(__file__).parents[1]
+
+    secret = Path(program_root / 'temp' / 'atlassian-secret.secret').read_text()
 
     confluence = Confluence(
         url='https://georgetowntx.atlassian.net',
