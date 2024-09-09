@@ -1,0 +1,34 @@
+############################################
+# Water Analytics standard .gitignore file #
+############################################
+
+# Directories
+############################################
+__pycache__/
+# Cache files can muddy up the repository, so we just exclude the entire directory
+
+venv/
+# We don't include the venv in our repos, make a requirements.txt file!
+
+## Ignored contents:
+# In addition to ignoring these two directories, we also ignore the contents of the following:
+
+# `temp`
+# `config`
+# `logs`
+
+# These directories are ignored for structural integrity, but their contents is ignored due to
+# potential security risks or data that should be generated during setup / runtime.
+
+# File extensions
+############################################
+*.ini
+# Ignore config files, the software should generate these!
+
+*.secret
+# All credentials should be stored in text files with the .secret extension
+# Don't include them in your repositories!
+# Best practice, store any .secret files in the temp directory, this is just a failsafe
+
+*.log
+# We want fresh .log files when porting the software to a new machine!
