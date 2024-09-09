@@ -11,7 +11,7 @@ Adds a new weekly sync agenda with a dynamically generated date in the title (th
 ### Setup
 1. Download the program
 2. Register for a key from Atlassian using your user account.
-3. Add an `atlassian-secret.secret` file to the `temp` directory
+3. Add an `atlassian-secret.secret` file to the `temp` directory with your key.
 ### Basic Use
 Intended for use with Microsoft Task Scheduler. Comes with an included PowerShell wrapper in the `scripts` directory for this purpose.
 ### Testing
